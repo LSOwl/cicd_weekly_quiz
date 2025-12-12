@@ -27,3 +27,6 @@ def test_div():
 def test_log():
     assert log(100) == 2
     assert log(8, 2) == 3
+    assert log(1) == 0
+    assert log(1, 52) == 0
+    assert log(6, 6) == 1
