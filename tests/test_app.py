@@ -23,3 +23,7 @@ def test_div():
     assert div(10, 5) == 2
     assert div(6, 1.5) == 4
     assert div(10, -2) == -5
+
+def test_log():
+    assert log(100) == 2
+    assert log(8, 2) == 3
