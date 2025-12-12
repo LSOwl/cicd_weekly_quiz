@@ -5,6 +5,7 @@ root = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(root / "src"))
 
 from app import *
+from decimal import Decimal
 
 # ------------------------ #
 # ---- addition tests ---- #
@@ -98,11 +99,10 @@ def test_sin1():
 # ---- cosine tests ---- #
 # ---------------------- #
 def test_cos():
-	assert cos(0) == 1
+    assert cos(0) == 1
 
-def test_cos():
-	assert cos(math.pi) == -1
+def test_cos1():
+    assert cos(math.pi) == -1
 
-def test_cos():
-	angle = math.pi/2
-	assert cos(angle) == 0
+def test_cos2():
+    assert cos(math.pi/2) == 0
