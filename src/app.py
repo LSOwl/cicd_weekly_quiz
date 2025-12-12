@@ -14,3 +14,6 @@ def div (a, b):
 
 def log (a, base=10):
     return math.log(a, base)
+
+def square (a):
+    return a**2
