@@ -108,3 +108,15 @@ def test_cos1():
 
 def test_cos2():
     assert cos(math.pi/2) == 0
+
+# --------------------- #
+# ---- square root ---- #
+# --------------------- #
+def test_sq_root():
+    assert sq_root(25) == 5
+
+def test_sq_root1():
+    assert sq_root(0) == 0
+
+def test_sq_root2():
+    assert sq_root(1) == 1
