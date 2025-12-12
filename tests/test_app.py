@@ -120,3 +120,15 @@ def test_sq_root1():
 
 def test_sq_root2():
     assert sq_root(1) == 1
+
+# -------------------- #
+# ---- percentage ---- #
+# -------------------- #
+def test_percent():
+    assert percent(10, 100) == 10
+
+def test_percent1():
+    assert percent(5, 5) == 100
+
+def test_percent2():
+    assert percent(0, 300) == 0
