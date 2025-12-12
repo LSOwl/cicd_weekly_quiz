@@ -17,3 +17,6 @@ def log (a, base=10):
 
 def square (a):
     return a**2
+
+def sin (a):
+    return math.sin(a)
