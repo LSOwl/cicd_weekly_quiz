@@ -5,7 +5,7 @@ root = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(root / "src"))
 
 from app import *
-from decimal import Decimal
+import pytest
 
 # ------------------------ #
 # ---- addition tests ---- #
@@ -48,6 +48,11 @@ def test_div_decimal():
 
 def test_div_negative():
     assert div(10, -2) == -5
+
+def test_div_zero():
+    with pytest.raises(ZeroDivisionError) as error:
+        div(5, 0)
+    assert str(error.value) == "Division by zero"
 
 # ------------------------- #
 # ---- logarithm tests ---- #
