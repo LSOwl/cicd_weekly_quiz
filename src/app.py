@@ -1,3 +1,5 @@
+import math
+
 def add (a, b):
     return a+b
 
@@ -9,3 +11,6 @@ def mult (a, b):
 
 def div (a, b):
     return a/b
+
+def log (a, base=10):
+    return math.log(a, base)
