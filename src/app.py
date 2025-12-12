@@ -16,7 +16,10 @@ def div (a, b):
         raise ZeroDivisionError("Division by zero")
 
 def log (a, base=10):
-    return math.log(a, base)
+    try:
+        return math.log(a, base)
+    except ValueError:
+        raise ValueError("Value out of domain range")
 
 def square (a):
     return a**2
