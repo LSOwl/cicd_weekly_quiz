@@ -93,3 +93,16 @@ def test_sin():
 def test_sin1():
     angle = math.pi/2
     assert sin(angle) == 1
+
+# ---------------------- #
+# ---- cosine tests ---- #
+# ---------------------- #
+def test_cos():
+	assert cos(0) == 1
+
+def test_cos():
+	assert cos(math.pi) == -1
+
+def test_cos():
+	angle = math.pi/2
+	assert cos(angle) == 0
