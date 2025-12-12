@@ -10,7 +10,10 @@ def mult (a, b):
     return a*b
 
 def div (a, b):
-    return a/b
+    try:
+        return a/b
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Division by zero")
 
 def log (a, base=10):
     return math.log(a, base)
