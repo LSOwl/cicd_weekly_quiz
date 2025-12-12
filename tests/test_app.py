@@ -72,6 +72,16 @@ def test_log_1_diff_base():
 def test_log_same_base():
     assert log(6, 6) == 1
 
+def test_log_base0():
+    with pytest.raises(ValueError) as error:
+        log(5, 0)
+    assert str(error.value) == "Value out of domain range"
+
+def test_log_value0():
+    with pytest.raises(ValueError) as error:
+        log(0)
+    assert str(error.value) == "Value out of domain range"
+
 # ---------------------- #
 # ---- square tests ---- #
 # ---------------------- #
