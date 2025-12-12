@@ -10,10 +10,16 @@ def mult (a, b):
     return a*b
 
 def div (a, b):
-    return a/b
+    try:
+        return a/b
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Division by zero")
 
 def log (a, base=10):
-    return math.log(a, base)
+    try:
+        return math.log(a, base)
+    except ValueError:
+        raise ValueError("Value out of domain range")
 
 def square (a):
     return a**2
@@ -29,7 +35,10 @@ def cos (a):
     return result
 
 def sq_root(a):
-    return a**0.5
+    if a < 0:
+        raise ValueError("Value cannot be negative")
+    else:
+        return a**0.5
 
 def percent(a, b):
     decimal = a/b
