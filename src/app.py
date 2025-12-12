@@ -19,4 +19,11 @@ def square (a):
     return a**2
 
 def sin (a):
-    return math.sin(a)
+    # truncate result to 2 decimal places (avoids roundoff error with
+    # python implementation of pi in math.pi)
+    result = float(f"{math.sin(a):.2f}")
+    return result
+
+def cos (a):
+    result = float(f"{math.cos(a):.2f}")
+    return result
