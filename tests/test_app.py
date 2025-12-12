@@ -30,3 +30,10 @@ def test_log():
     assert log(1) == 0
     assert log(1, 52) == 0
     assert log(6, 6) == 1
+
+def test_square():
+    assert square(5) == 25
+    assert square(0.5) == 0.25
+    assert square(-4) == 16
+    assert square(0) == 0
+    assert square(1) == 1
