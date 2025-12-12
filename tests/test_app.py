@@ -83,3 +83,13 @@ def test_square3():
 
 def test_square4():
     assert square(1) == 1
+
+# -------------------- #
+# ---- sine tests ---- #
+# -------------------- #
+def test_sin():
+    assert sin(0) == 0
+
+def test_sin1():
+    angle = math.pi/2
+    assert sin(angle) == 1
