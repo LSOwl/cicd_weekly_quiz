@@ -136,6 +136,11 @@ def test_sq_root_0():
 def test_sq_root_1():
     assert sq_root(1) == 1
 
+def test_sq_root_negative():
+    with pytest.raises(ValueError) as error:
+        sq_root(-1) 
+    assert str(error.value) == "Value cannot be negative"
+
 # -------------------- #
 # ---- percentage ---- #
 # -------------------- #
