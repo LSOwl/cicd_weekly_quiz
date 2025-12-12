@@ -27,3 +27,6 @@ def sin (a):
 def cos (a):
     result = float(f"{math.cos(a):.2f}")
     return result
+
+def sq_root(a):
+    return a**0.5
