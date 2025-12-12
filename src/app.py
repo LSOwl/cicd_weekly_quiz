@@ -35,7 +35,10 @@ def cos (a):
     return result
 
 def sq_root(a):
-    return a**0.5
+    if a < 0:
+        raise ValueError("Value cannot be negative")
+    else:
+        return a**0.5
 
 def percent(a, b):
     decimal = a/b
