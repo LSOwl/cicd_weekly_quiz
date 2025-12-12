@@ -18,3 +18,8 @@ def test_mult():
 	assert mult(5, 6) == 30
 	assert mult(0.5, 8) == 4
 	assert mult(-5, 1) == -5
+
+def test_div():
+    assert div(10, 5) == 2
+    assert div(6, 1.5) == 4
+    assert div(10, -2) == -5
