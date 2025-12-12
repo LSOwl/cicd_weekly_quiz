@@ -30,3 +30,7 @@ def cos (a):
 
 def sq_root(a):
     return a**0.5
+
+def percent(a, b):
+    decimal = a/b
+    return decimal * 100
